@@ -1,0 +1,196 @@
+
+/* style without media query are for first mobile approch. below 768px  */
+
+/* Login Pop up */
+#loginBox {
+    display: none;
+}
+/* End of Login Pop up */
+
+
+/* reset style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a:link, a:active, a:hover, a:visited{
+  text-decoration: none;
+}
+/* end of reset style */
+
+/* Navigation bar */
+.top-nav-bar-left{
+  display: none;
+}
+.top-navbar-icon1{
+  display: block;
+}
+.top-nav-bar-right li{
+  display: inline-block;
+}
+/* end of Navigation bar */
+
+
+/* common boostrap fix */
+.dropdown-menu{
+  z-index: 99999;
+}
+.navbar {
+    margin-bottom: 0;
+    z-index: 9999;
+}
+.no-padding-margin{
+  margin: 0;
+  padding: 0;
+}
+.affix {
+  top: 0;
+  width: 100%;
+}
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+/* end of common boostrap fix */
+
+/* card-list style*/
+.card-list li{
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #d5d5d5;  
+  margin: 10px 10px 10px 0;
+  box-shadow: 1px 1px 5px #d7d7d7;
+  border: 1px solid #d7d7d7;
+  overflow: hidden;
+} 
+.card-title{
+  color: #1f5eb5;
+  padding: 10px;
+}
+.card-text{
+  color: #1a1a1b;
+  padding: 10px;
+}
+.card-img{
+ transition: all 10s;
+ overflow: hidden;
+ height: 100px;
+}
+.card-img:hover{
+ width: 150%;
+}
+/* end of card-list style*/
+
+/* sidebar style */
+.sidebar{
+    border: 1px solid #d5d5d5;  
+    margin: 10px 0;
+    box-shadow: 1px 1px 5px #d7d7d7;
+    border: 1px solid #d7d7d7;
+} 
+.sidebar-link {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 10px;
+}
+.sidebar-list li {
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px 10px 10px 46px;
+    text-indent: -18px;
+}
+.link-icon {
+    position: relative;
+    right: 5px;
+}
+/* .sidebar-list li a:before {
+    content: url(../img/iconlib_small.png);
+    position: relative;
+    top: 6px;
+    right: 19px;
+} */
+/* end of sidebar style */
+
+
+/* footer area style */
+.footer-area{
+  background-color: #3c3c3c ;
+}
+
+.footer-link-list{
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-link-list li {
+    border-bottom: 1px solid #5b5b5b;
+    padding: 6px 0;
+
+}
+.footer-link-list li:last-child{
+  border-bottom: none; 
+}
+.footer-link-list li a:link, .footer-link-list li a:visited{
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-link-list li a:active, .footer-link-list li a:hover{
+  text-decoration: none;
+  color: #0085d4;
+}
+/* end of footer area style */
+
+
+
+/* RESPONSIVE STYLE */
+/* between 768px to 991px */
+@media (min-width: 768px) {    
+    /* card-list style*/
+    .card-list li{
+        width: 322px;
+    } 
+    /* end of card-list style*/
+
+     /* Navigation bar */
+    .top-nav-bar-left{
+      display: block;
+    }
+    .top-navbar-icon1{
+      display: none;
+    }
+    /* end of Navigation bar */    
+
+    /* Login Pop up */
+    #loginBox {
+        background-color: #fff;
+        left: 141px;
+        padding: 15px;
+        position: absolute;
+        top: 102px;
+        z-index: 3000;
+        display: block;
+    }
+    /* End of Login Pop up */
+
+}
+
+/* between 768px to 991px */
+@media (min-width: 992px) {
+    /* card-list style*/
+    .card-list li{
+        width: 212px;
+    } 
+    /* end of card-list style*/
+    
+}
+
+/* between 768px to 991px */
+@media (min-width: 1200px) {
+  /* card-list style*/
+  .card-list li{
+      width: 262px;
+  } 
+  /* end of card-list style*/
+
+
+}
